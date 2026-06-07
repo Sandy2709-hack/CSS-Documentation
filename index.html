@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="widthh=device_width, initial_scale=1.0" name="viewport" />
+    <title>Ultimate CSS Documentation</title>
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar" id="navbar">
+            <header>CSS DOCUMENTATION</header>
+            <ol class="main_topics">
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#What_is_CSS">What is CSS?</a></li>
+                                <li><a href="#Why_css_exists">Why CSS Exists</a></li>
+                                <li><a href="#HTML_vs_CSS_vs_JavaScript">HTML vs CSS vs JavaScript</a></li>
+                                <li><a href="#Inline_CSS">Inline CSS</a></li>
+                                <li><a href="#Internal_CSS">Internal CSS</a></li>
+                                <li><a href="#External_CSS">External CSS</a></li>
+                                <li><a href="#CSS_Syntax">CSS Syntax</a></li>
+                                <li><a href="#Comments">Comments</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#Universal_Selector">Universal Selector</a></li>
+                                <li><a href="#Element_Selector">Element Selector</a></li>
+                                <li><a href="#Class_Selector">Class Selector</a></li>
+                                <li><a href="#Id_Selector">ID Selector</a></li>
+                                <li><a href="#Grouping_Selectors">Grouping Selectors</a></li>
+                                <li><a href="#Descendant_selector">Descendant Selector</a></li>
+                                <li><a href="#Child_selector">Child Selector</a></li>
+                                <li><a href="#Adjacent_sibling_selector">Adjacent Sibling Selector</a></li>
+                                <li><a href="#General_sibling_selector">General Sibling Selector</a></li>
+                                <li><a href="#Attribute_Selectors">Attribute Selectors</a></li>
+                                <li><a href="#Pseudo_classes">Pseudo Classes</a></li>
+                                <li><a href="#Pseudo_elements">Pseudo Elements</a></li>
+                                <li><a href="#Specificity">Specificity</a></li>
+                                <li><a href="#Important">!important</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Colors_&amp;_Backgrounds">Colors &amp; Backgrounds</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#named_colors">Named Colors</a></li>
+                                <li><a href="#hex">HEX</a></li>
+                                <li><a href="#rgb">RGB</a></li>
+                                <li><a href="#rgba">RGBA</a></li>
+                                <li><a href="#hsl">HSL</a></li>
+                                <li><a href="#hsla">HSLA</a></li>
+                                <li><a href="#background_color">background_color</a></li>
+                                <li><a href="#background_image">background_image</a></li>
+                                <li><a href="#background_repeat">background_repeat</a></li>
+                                <li><a href="#background_position">background_position</a></li>
+                                <li><a href="#background_size">background_size</a></li>
+                                <li><a href="#background_attachment">background_attachment</a></li>
+                                <li><a href="#linear_gradients">Linear Gradients</a></li>
+                                <li><a href="#radial_gradients">Radial Gradients</a></li>
+                                <li><a href="#conic_gradients">Conic Gradients</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Typography">Typography</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#font_family">font_family</a></li>
+                                <li><a href="#google_fonts">Google Fonts</a></li>
+                                <li><a href="#font_size">font_size</a></li>
+                                <li><a href="#font_weight">font_weight</a></li>
+                                <li><a href="#font_style">font_style</a></li>
+                                <li><a href="#font_variant">font_variant</a></li>
+                                <li><a href="#text_align">text_align</a></li>
+                                <li><a href="#text_decoration">text_decoration</a></li>
+                                <li><a href="#text_transform">text_transform</a></li>
+                                <li><a href="#text_shadow">text_shadow</a></li>
+                                <li><a href="#line_height">line_height</a></li>
+                                <li><a href="#letter_spacing">letter_spacing</a></li>
+                                <li><a href="#word_spacing">word_spacing</a></li>
+                                <li><a href="#text_indent">text_indent</a></li>
+                                <li><a href="#text_overflow">text_overflow</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Units_&amp;_Measurements">Units &amp; Measurements</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#px">px</a></li>
+                                <li><a href="#cm">cm</a></li>
+                                <li><a href="#mm">mm</a></li>
+                                <li><a href="#in">in</a></li>
+                                <li><a href="#">%</a></li>
+                                <li><a href="#em">em</a></li>
+                                <li><a href="#rem">rem</a></li>
+                                <li><a href="#vw">vw</a></li>
+                                <li><a href="#vh">vh</a></li>
+                                <li><a href="#vmin">vmin</a></li>
+                                <li><a href="#vmax">vmax</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#The_CSS_Box_Model">The CSS Box Model</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#content_area">Content Area</a></li>
+                                <li><a href="#width">Width</a></li>
+                                <li><a href="#height">Height</a></li>
+                                <li><a href="#padding">Padding</a></li>
+                                <li><a href="#border">Border</a></li>
+                                <li><a href="#border_radius">Border Radius</a></li>
+                                <li><a href="#margin">Margin</a></li>
+                                <li><a href="#box_sizing">box_sizing</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Display_Property">Display Property</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#block">Block</a></li>
+                                <li><a href="#inline">Inline</a></li>
+                                <li><a href="#inline_block">Inline_block</a></li>
+                                <li><a href="#none">None</a></li>
+                                <li><a href="#contents">Contents</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Positioning">Positioning</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#static">Static</a></li>
+                                <li><a href="#relative">Relative</a></li>
+                                <li><a href="#absolute">Absolute</a></li>
+                                <li><a href="#fixed">Fixed</a></li>
+                                <li><a href="#sticky">Sticky</a></li>
+                                <li><a href="#z_index">Z_Index</a></li>
+                                <li><a href="#stacking_context">Stacking Context</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Flexbox">Flexbox</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#flex_container">Flex Container</a></li>
+                                <li><a href="#flex_items">Flex Items</a></li>
+                                <li><a href="#main_axis">Main Axis</a></li>
+                                <li><a href="#cross_axis">Cross Axis</a></li>
+                                <li><a href="#justify_content">justify_content</a></li>
+                                <li><a href="#align_items">align_items</a></li>
+                                <li><a href="#align_content">align_content</a></li>
+                                <li><a href="#gap">gap</a></li>
+                                <li><a href="#flex_grow">flex_grow</a></li>
+                                <li><a href="#flex_shrink">flex_shrink</a></li>
+                                <li><a href="#flex_basis">flex_basis</a></li>
+                                <li><a href="#order">order</a></li>
+                                <li><a href="#align_self">align_self</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Grid">CSS Grid</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#grid_basics">Grid Basics</a></li>
+                                <li><a href="#grid_container">Grid Container</a></li>
+                                <li><a href="#grid_items">Grid Items</a></li>
+                                <li><a href="#rows___columns">Rows &amp; Columns</a></li>
+                                <li><a href="#grid_template_areas">Grid Template Areas</a></li>
+                                <li><a href="#fr_unit">fr Unit</a></li>
+                                <li><a href="#gap">Gap</a></li>
+                                <li><a href="#auto_fit">Auto Fit</a></li>
+                                <li><a href="#auto_fill">Auto Fill</a></li>
+                                <li><a href="#responsive_grids">Responsive Grids</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Overflow">Overflow</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#visible">visible</a></li>
+                                <li><a href="#hidden">hidden</a></li>
+                                <li><a href="#scroll">scroll</a></li>
+                                <li><a href="#auto">auto</a></li>
+                                <li><a href="#overflow_x">overflow_x</a></li>
+                                <li><a href="#overflow_y">overflow_y</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Lists_&amp;_Tables">Lists &amp; Tables</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#list_style_type">list_style_type</a></li>
+                                <li><a href="#list_style_position">list_style_position</a></li>
+                                <li><a href="#list_style_image">list_style_image</a></li>
+                                <li><a href="#border_collapse">border_collapse</a></li>
+                                <li><a href="#table_layout">table_layout</a></li>
+                                <li><a href="#caption_side">caption_side</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Forms_Styling">Forms Styling</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#inputs">Inputs</a></li>
+                                <li><a href="#textareas">Textareas</a></li>
+                                <li><a href="#select_menus">Select Menus</a></li>
+                                <li><a href="#checkboxes">Checkboxes</a></li>
+                                <li><a href="#radio_buttons">Radio Buttons</a></li>
+                                <li><a href="#placeholder_styling">Placeholder Styling</a></li>
+                                <li><a href="#focus_states">Focus States</a></li>
+                                <li><a href="#disabled_states">Disabled States</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#mobile_first">Mobile First</a></li>
+                                <li><a href="#media_queries">Media Queries</a></li>
+                                <li><a href="#breakpoints">Breakpoints</a></li>
+                                <li><a href="#responsive_typography">Responsive Typography</a></li>
+                                <li><a href="#responsive_images">Responsive Images</a></li>
+                                <li><a href="#responsive_layouts">Responsive Layouts</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Transforms">CSS Transforms</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#translate">translate()</a></li>
+                                <li><a href="#rotate">rotate()</a></li>
+                                <li><a href="#scale">scale()</a></li>
+                                <li><a href="#skew">skew()</a></li>
+                                <li><a href="#transform_origin">transform_origin</a></li>
+                                <li><a href="#multiple_transforms">Multiple Transforms</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Transitions">CSS Transitions</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#transition_property">transition_property</a></li>
+                                <li><a href="#transition_duration">transition_duration</a></li>
+                                <li><a href="#transition_delay">transition_delay</a></li>
+                                <li><a href="#transition_timing_function">transition_timing_function</a></li>
+                                <li><a href="#hover_animations">Hover Animations</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Animations">CSS Animations</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#keyframes">@keyframes</a></li>
+                                <li><a href="#animation_name">animation_name</a></li>
+                                <li><a href="#animation_duration">animation_duration</a></li>
+                                <li><a href="#animation_delay">animation_delay</a></li>
+                                <li><a href="#animation_iteration_count">animation_iteration_count</a></li>
+                                <li><a href="#animation_direction">animation_direction</a></li>
+                                <li><a href="#animation_fill_mode">animation_fill_mode</a></li>
+                                <li><a href="#animation_play_state">animation_play_state</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Variables">CSS Variables</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#creating_variables">Creating Variables</a></li>
+                                <li><a href="#using_variables">Using Variables</a></li>
+                                <li><a href="#fallback_values">Fallback Values</a></li>
+                                <li><a href="#global_variables">Global Variables</a></li>
+                                <li><a href="#theme_switching">Theme Switching</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Advanced_Selectors">Advanced Selectors</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#is">:is()</a></li>
+                                <li><a href="#where">:where()</a></li>
+                                <li><a href="#has">:has()</a></li>
+                                <li><a href="#not">:not()</a></li>
+                                <li><a href="#complex_selector_patterns">Complex Selector Patterns</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Functions">CSS Functions</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#calc">calc()</a></li>
+                                <li><a href="#min">min()</a></li>
+                                <li><a href="#max">max()</a></li>
+                                <li><a href="#clamp">clamp()</a></li>
+                                <li><a href="#var">var()</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Shadows">Shadows</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#box_shadow">Box Shadow</a></li>
+                                <li><a href="#multiple_shadows">Multiple Shadows</a></li>
+                                <li><a href="#text_shadow">Text Shadow</a></li>
+                                <li><a href="#neumorphism_basics">Neumorphism Basics</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Modern_CSS_Layout_Techniques">Modern CSS Layout
+                            Techniques</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#holy_grail_layout">Holy Grail Layout</a></li>
+                                <li><a href="#sidebar_layout">Sidebar Layout</a></li>
+                                <li><a href="#card_layout">Card Layout</a></li>
+                                <li><a href="#masonry_concepts">Masonry Concepts</a></li>
+                                <li><a href="#dashboard_layout">Dashboard Layout</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Architecture">CSS Architecture</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#naming_conventions">Naming Conventions</a></li>
+                                <li><a href="#bem">BEM</a></li>
+                                <li><a href="#organizing_css_files">Organizing CSS Files</a></li>
+                                <li><a href="#reusable_components">Reusable Components</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Accessibility_in_CSS">Accessibility in CSS</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#contrast_ratios">Contrast Ratios</a></li>
+                                <li><a href="#focus_indicators">Focus Indicators</a></li>
+                                <li><a href="#reduced_motion">Reduced Motion</a></li>
+                                <li><a href="#readability">Readability</a></li>
+                                <li><a href="#accessible_forms">Accessible Forms</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Performance">CSS Performance</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#efficient_Selectors">Efficient Selectors</a></li>
+                                <li><a href="#avoiding_reflows">Avoiding Reflows</a></li>
+                                <li><a href="#optimizing_animations">Optimizing Animations</a></li>
+                                <li><a href="#best_practices">Best Practices</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Debugging">CSS Debugging</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#browser_devtools">Browser DevTools</a></li>
+                                <li><a href="#inspect_element">Inspect Element</a></li>
+                                <li><a href="#computed_styles">Computed Styles</a></li>
+                                <li><a href="#box_model_debugging">Box Model Debugging</a></li>
+                                <li><a href="#flexbox_debugging">Flexbox Debugging</a></li>
+                                <li><a href="#grid_debugging">Grid Debugging</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Modern_CSS_Features">Modern CSS Features</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#container_queries">Container Queries</a></li>
+                                <li><a href="#logical_properties">Logical Properties</a></li>
+                                <li><a href="#aspect_ratio">aspect_ratio</a></li>
+                                <li><a href="#accent_color">accent_color</a></li>
+                                <li><a href="#scroll_behavior">scroll_behavior</a></li>
+                                <li><a href="#scroll_snap">scroll_snap</a></li>
+                                <li><a href="#backdrop_filter">backdrop_filter</a></li>
+                                <li><a href="#object_fit">object_fit</a></li>
+                                <li><a href="#object_position">object_position</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Best_Practices">CSS Best Practices</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#clean_code">Clean Code</a></li>
+                                <li><a href="#maintainability">Maintainability</a></li>
+                                <li><a href="#reusability">Reusability</a></li>
+                                <li><a href="#scalability">Scalability</a></li>
+                                <li><a href="#common_mistakes">Common Mistakes</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#Real_World_Projects">Real World Projects</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#landing_page">Landing Page</a></li>
+                                <li><a href="#documentation_website">Documentation Website</a></li>
+                                <li><a href="#portfolio_website">Portfolio Website</a></li>
+                                <li><a href="#dashboard_ui">Dashboard UI</a></li>
+                                <li><a href="#blog_layout">Blog Layout</a></li>
+                                <li><a href="#product_card">Product Card</a></li>
+                                <li><a href="#navigation_bar">Navigation Bar</a></li>
+                                <li><a href="#pricing_section">Pricing Section</a></li>
+                                <li><a href="#hero_section">Hero Section</a></li>
+                                <li><a href="#responsive_footer">Responsive Footer</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+                <div class="a">
+                    <li class="m_list"><a class="nav-link" href="#CSS_Cheat_Sheet">CSS Cheat Sheet</a>
+                        <div class="drop_down">
+                            <ol class="sub_topics">
+                                <li><a href="#Selectors_cheat_sheet">Selectors Cheat Sheet</a></li>
+                                <li><a href="#flexbox_cheat_sheet">Flexbox Cheat Sheet</a></li>
+                                <li><a href="#grid_cheat_sheet">Grid Cheat Sheet</a></li>
+                                <li><a href="#position_cheat_sheet">Position Cheat Sheet</a></li>
+                                <li><a href="#units_cheat_sheet">Units Cheat Sheet</a></li>
+                                <li><a href="#colors_cheat_sheet">Colors Cheat Sheet</a></li>
+                                <li><a href="#animation_cheat_sheet">Animation Cheat Sheet</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </div>
+            </ol>
+        </nav>
+        <!--__ the main content(all the notes) __-->
+        <main id="main-doc">
+            <section class="main-section" id="Introduction_to_CSS">
+                <header>Introduction to CSS</header>
+                <ol>
+                    <li id="what_is_css">What is CSS?</li>
+                    <p class="content">CSS (Cascading Style Sheets) is a stylesheet language used to control the
+                        appearance and layout of web pages. While HTML provides the structure and content of a webpage,
+                        CSS determines how that content looks, including colors, fonts, spacing, borders, positioning,
+                        and animations. CSS helps make websites visually appealing and easier to use.
+                    </p>
+                    <li id="why_css_exists">Why CSS Exists</li>
+                    <p class="content">Before CSS was introduced, web developers had to use HTML tags and attributes
+                        to style pages, which made code messy and difficult to maintain. CSS was created to separate a
+                        webpage's content from its presentation. This separation makes websites easier to design,
+                        update, and maintain. A single CSS file can control the appearance of multiple pages, saving
+                        time and reducing code duplication.</p>
+                    <li id="html_vs_css_vs_javascript">HTML vs CSS vs JavaScript</li>
+                    <p class="content">HTML, CSS, and JavaScript are the three core technologies of web development.
+                        HTML creates the structure and content of a webpage, such as headings, paragraphs, images, and
+                        links. CSS styles that content by controlling its appearance and layout. JavaScript adds
+                        interactivity and dynamic behavior, such as responding to button clicks, validating forms, or
+                        updating content without reloading the page. Together, they form the foundation of modern
+                        websites.</p>
+                    <li id="inline_css">Inline CSS</li>
+                    <p class="content">Inline CSS is written directly inside an HTML element using the style
+                        attribute. It affects only the specific element where it is applied. Inline CSS is useful for
+                        quick styling or testing, but it is generally not recommended for large projects because it
+                        makes code harder to maintain and reuse.
+                    <p class="examples">___</p>
+                    </p>
+                    <li id="internal_css">Internal CSS</li>
+                    <p class="content">Internal CSS is written inside a <code>&lt;style&gt;</code> tag within the
+                        <code>&lt;head&gt;</code>
+                        section of an HTML document. It allows styles to be applied to multiple elements on the same
+                        page. Internal CSS is useful when a webpage has unique styles that are not shared with other
+                        pages.
+                    <p class="" example="">___</p>
+                    </p>
+                    <li id="external_css">External CSS</li>
+                    <p class="content">External CSS stores styles in a separate .css file and links it to HTML using the
+                        <code>&lt;link&gt;</code> tag. This is the most commonly used method because it keeps HTML
+                        clean, allows
+                        style reuse across multiple pages, and makes website maintenance easier.
+                    <p class="example">___</p>
+                    </p>
+                    <li id="css_syntax">CSS Syntax</li>
+                    <p class="content">CSS rules consist of a selector and a declaration block. The selector identifies
+                        which HTML elements will be styled, while the declaration block contains one or more properties
+                        and values enclosed in curly braces. Each property_value pair ends with a semicolon.
+                    <p class="example">___</p>
+                    </p>
+                    <li id="comments">Comments</li>
+                    <p class="content">Comments in CSS are used to add notes or explanations within the code. They are
+                        ignored by the browser and do not affect how the webpage is displayed. Comments help improve
+                        code readability and make it easier for developers to understand or maintain the stylesheet.
+                    <p class="example">___</p>
+                    </p>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Selectors">
+                <header>CSS Selectors</header>
+                <ol>
+                    <li id="universal_selector">Universal Selector</li>
+                    <p class="content">The universal selector (*) targets all elements on a webpage. It applies the
+                        specified styles to
+                        every element, making it useful for resetting default browser styles or applying a common style
+                        across the entire site. However, it should be used with caution as it can lead to performance
+                        issues if overused.</p>
+                    <li id="element_selector">Element Selector</li>
+                    <p class="content">The element selector targets all instances of a specific HTML element. For
+                        example, the selector
+                        "p" would apply styles to all <code>&lt;p&gt;</code> (paragraph) elements on the page. This is
+                        one of the
+                        most basic and commonly used Selectors in CSS.</p>
+                    <li id="class_selector">Class Selector</li>
+                    <p class="content">The class selector targets elements with a specific class attribute. It is
+                        denoted by a
+                        period (.) followed by the class name. For example, ".button" would apply styles to all
+                        elements with the class "button". Class Selectors are versatile and allow for styling multiple
+                        elements without affecting others.</p>
+                    <li id="id_selector">ID Selector</li>
+                    <p class="content">The id selector targets a single element with a specific id attribute. It is
+                        denoted by a
+                        hash symbol (#) followed by the id name. For example, "#header" would apply styles to the
+                        element with the id "header". ID Selectors are unique and should be used sparingly.</p>
+                    <li id="grouping_Selectors">Grouping Selectors</li>
+                    <p class="content">Grouping Selectors allow you to apply the same styles to multiple elements by
+                        separating
+                        them with commas. For example, "h1, h2, h3" would apply the same styles to all
+                        <code>&lt;h1&gt;</code>,
+                        <code></code>&lt;h2&gt;, and <code>&lt;h3&gt;</code> elements.
+                    </p>
+                    <li id="descendant_selector">Descendant Selector</li>
+                    <p class="content">The descendant selector targets elements that are descendants of a specified
+                        element. It is
+                        denoted by a space between two Selectors. For example, "div p" would apply styles to all
+                        <code>&lt;p&gt;</code> elements that are inside a <code>&lt;div&gt;</code> element.
+                    </p>
+                    <li id="child_selector">Child Selector</li>
+                    <p class="content">The child selector targets direct child elements of a specified parent element.
+                        It is
+                        denoted by the greater_than symbol (&gt;). For example, "div &gt; p" would apply styles to all
+                        &lt;p&gt; elements that are direct children of a &lt;div&gt; element.</p>
+                    <li id="adjacent_sibling_selector">Adjacent Sibling Selector</li>
+                    <p class="content">The adjacent sibling selector targets an element that is immediately preceded by
+                        a specified
+                        sibling element. It is denoted by the plus symbol (+). For example, "h2 + p" would apply styles
+                        to the first &lt;p&gt; element that comes immediately after an &lt;h2&gt; element.</p>
+                    <li id="general_sibling_selector">General Sibling Selector</li>
+                    <p class="content">The general sibling selector targets elements that are siblings of a specified
+                        element, regardless of their position. It is denoted by the tilde symbol (~). For example, "h2 ~
+                        p" would apply styles to all &lt;p&gt; elements that come after an &lt;h2&gt; element.</p>
+                    <li id="attribute_Selectors">Attribute Selectors</li>
+                    <p class="content">Attribute Selectors target elements based on their attributes and values. They
+                        are denoted by square brackets [] surrounding the attribute and its value. For example,
+                        "a[href]" would apply styles to all &lt;a&gt; elements that have an "href" attribute.</p>
+                    <li id="pseudo_classes">Pseudo Classes</li>
+                    <p class="content">Pseudo classes target elements based on their state or position in the document
+                        tree. They are denoted by a colon (:) followed by the pseudo class name. For example, "a:hover"
+                        would apply styles to a link when the user hovers over it.</p>
+                    <li id="pseudo_elements">Pseudo Elements</li>
+                    <p class="content">Pseudo elements target specific parts of an element, such as the first line of a
+                        paragraph or the content before an element. They are denoted by a double colon (::) followed by
+                        the pseudo element name. For example, "p::first_line" would apply styles to the first line of
+                        each paragraph.</p>
+                    <li id="specificity">Specificity</li>
+                    <p class="content">Specificity determines which CSS rule is applied when multiple rules could apply
+                        to the same element. It is calculated based on the number of ID Selectors, class Selectors, and
+                        element Selectors in a rule.</p>
+                    <li id="important">!important</li>
+                    <p class="content">The !important declaration overrides other CSS rules and forces a style to be
+                        applied regardless of specificity. It should be used sparingly as it can make debugging more
+                        difficult.</p>
+                </ol>
+            </section>
+            <section class="main-section" id="Colors_&amp;_Backgrounds">
+                <header>Colors &amp; Backgrounds</header>
+                <ol>
+                    <li id="named_colors">Named Colors</li>
+                    <p class="content">Named colors are predefined color names that can be used in CSS. Examples include
+                        "red", "blue", "green", "black", and "white". There are 140 named colors in total, and they
+                        provide a convenient way to specify colors without needing to remember hex codes or RGB values.
+                    </p>
+                    <li id="hex">HEX</li>
+                    <p class="content">HEX color values are a way to represent colors using hexadecimal notation. They
+                        consist of a hash symbol (#) followed by six hexadecimal digits, where the first two digits
+                        represent red, the next two represent green, and the last two represent blue. For example,
+                        #FF0000 represents red, #00FF00 represents green, and #0000FF represents blue.</p>
+                    <li id="rgb">RGB</li>
+                    <p class="content">RGB color values specify colors using the red, green, and blue color channels.
+                        Each
+                        channel can have a value from 0 to 255, where 0 means no contribution of that color and 255
+                        means
+                        full intensity. For example, rgb(255, 0, 0) represents red, rgb(0, 255, 0) represents green, and
+                        rgb(0, 0, 255) represents blue.</p>
+                    <li id="rgba">RGBA</li>
+                    <p class="content">RGBA color values are an extension of RGB that includes an alpha channel for
+                        opacity.
+                        The alpha value can range from 0 (fully transparent) to 1 (fully opaque). For example, rgba(255,
+                        0,
+                        0, 0.5) represents a semi_transparent red.</p>
+                    <li id="hsl">HSL</li>
+                    <p class="content">HSL color values specify colors using hue, saturation, and lightness. Hue is
+                        represented as an angle from 0 to 360 degrees, where 0 is red, 120 is green, and 240 is blue.
+                        Saturation is a percentage that represents the intensity of the color, where 0% is gray and 100%
+                        is
+                        full color. Lightness is also a percentage that represents how light or dark the color is, where
+                        0%
+                        is black and 100% is white. For example, hsl(0, 100%, 50%) represents red.</p>
+                    <li id="hsla">HSLA</li>
+                    <p class="content">HSLA color values are an extension of HSL that includes an alpha channel for
+                        opacity.
+                        The alpha value can range from 0 (fully transparent) to 1 (fully opaque). For example, hsla(0,
+                        100%,
+                        50%, 0.5) represents a semi_transparent red.</p>
+                    <li id="background_color">background_color</li>
+                    <p class="content">The background_color property sets the background color of an element.</p>
+                    <li id="background_image">background_image</li>
+                    <p class="content">The background_image property sets the background image of an element.</p>
+                    <li id="background_repeat">background_repeat</li>
+                    <p class="content">The background_repeat property controls how a background image is repeated. It
+                        can be
+                        set to "repeat" (default), "no_repeat", "repeat_x", or "repeat_y".</p>
+                    <li id="background_position">background_position</li>
+                    <p class="content">The background_position property sets the starting position of a background
+                        image.
+                    </p>
+                    <li id="background_size">background_size</li>
+                    <p class="content">The background_size property controls the size of a background image.</p>
+                    <li id="background_attachment">background_attachment</li>
+                    <p class="content">The background_attachment property controls whether a background image scrolls
+                        with
+                        the content or is fixed in place.</p>
+                    <li id="linear_gradients">Linear Gradients</li>
+                    <p class="content">Linear gradients create a gradual transition between two or more colors along a
+                        straight line. They are defined using the linear_gradient() function, which takes color stops
+                        and an
+                        optional direction as parameters.</p>
+                    <li id="radial_gradients">Radial Gradients</li>
+                    <p class="content">Radial gradients create a gradual transition between two or more colors from a
+                        central point. They are defined using the radial_gradient() function, which takes color stops
+                        and an
+                        optional center position as parameters.</p>
+                    <li id="conic_gradients">Conic Gradients</li>
+                    <p class="content">Conic gradients create a gradual transition between two or more colors around a
+                        central point. They are defined using the conic_gradient() function, which takes color stops and
+                        an
+                        optional center position as parameters.</p>
+                </ol>
+            </section>
+            <section class="main-section" id="Typography">
+                <header>Typography</header>
+                <ol>
+                    <li id="font_family">font_family</li>
+                    <p class="content">The font_family property specifies the typeface for text. It can include a list
+                        of font
+                        names as a fallback mechanism, where the browser will use the first available font.</p>
+                    <li id="google_fonts">Google Fonts</li>
+                    <p class="content">Google Fonts is a free library of web fonts that can be easily integrated into
+                        websites. It
+                        offers a wide variety of font styles and weights, allowing developers to enhance the typography
+                        of their sites.</p>
+                    <li id="font_size">font_size</li>
+                    <p class="content">The font_size property sets the size of the text. It can be specified using
+                        various units, such
+                        as pixels (px), ems (em), rems (rem), percentages (%), and viewport units (vw, vh).</p>
+                    <li id="font_weight">font_weight</li>
+                    <p class="content">The font_weight property sets the thickness of the text. It can be specified
+                        using keyword values
+                        like "normal" and "bold", or numeric values from 100 to 900.</p>
+                    <li id="font_style">font_style</li>
+                    <p class="content">The font_style property sets the style of the text. It can be set to "normal",
+                        "italic", or
+                        "oblique".</p>
+                    <li id="font_variant">font_variant</li>
+                    <p class="content">The font_variant property sets the variant of the text. It can be set to "normal"
+                        or
+                        "small_caps".</p>
+                    <li id="text_align">text_align</li>
+                    <p class="content">The text_align property sets the horizontal alignment of the text. It can be set
+                        to "left",
+                        "right", "center", or "justify".</p>
+                    <li id="text_decoration">text_decoration</li>
+                    <p class="content">The text_decoration property sets the decoration for the text. It can be set to
+                        "none",
+                        "underline", "overline", or "line_through".</p>
+                    <li id="text_transform">text_transform</li>
+                    <p class="content">The text_transform property sets the transformation for the text. It can be set
+                        to "none",
+                        "capitalize", "uppercase", or "lowercase".</p>
+                    <li id="text_shadow">text_shadow</li>
+                    <p class="content">The text_shadow property adds shadow to text. It takes values for horizontal and
+                        vertical
+                        offsets, blur radius, and color.</p>
+                    <li id="line_height">line_height</li>
+                    <p class="content">The line_height property sets the height of a line of text. It can be specified
+                        as a
+                        unitless number (e.g., 1.5) or using various units (e.g., pixels, ems).</p>
+                    <li id="letter_spacing">letter_spacing</li>
+                    <p class="content">The letter_spacing property sets the space between characters in text. It can be
+                        specified using various units (e.g., pixels, ems).</p>
+                    <li id="word_spacing">word_spacing</li>
+                    <p class="content">The word_spacing property sets the space between words in text. It can be
+                        specified
+                        using various units (e.g., pixels, ems).</p>
+                    <li id="text_indent">text_indent</li>
+                    <p class="content">The text_indent property sets the indentation of the first line of text. It can
+                        be
+                        specified using various units (e.g., pixels, ems).</p>
+                    <li id="text_overflow">text_overflow</li>
+                    <p class="content">The text_overflow property specifies how to handle content that overflows its
+                        container.
+                        It can be set to "clip" (default), "ellipsis", or "inherit".</p>
+                </ol>
+            </section>
+            <section class="main-section" id="Units_&amp;_Measurements">
+                <header>Units &amp; Measurements</header>
+                <ol>
+                    <li id="px">px</li>
+                    <p class="content">Pixels (px) are the most commonly used unit for specifying sizes in CSS. They
+                        represent the actual pixels on the screen.</p>
+                    <li id="cm">cm</li>
+                    <p class="content">Centimeters (cm) are a metric unit of length. They are less commonly used in web
+                        development.</p>
+                    <li id="mm">mm</li>
+                    <p class="content">Millimeters (mm) are a metric unit of length. They are also less commonly used in
+                        web development.</p>
+                    <li id="in">in</li>
+                    <p class="content">Inches (in) are a unit of length commonly used in print design. They are less
+                        commonly used in web development.</p>
+                    <li id="%">%</li>
+                    <p class="content">Percentages (%) are a relative unit of measurement. They are often used to
+                        specify sizes relative to their parent element.</p>
+                    <li id="em">em</li>
+                    <p class="content">The em unit is a relative unit of measurement based on the font size of the
+                        element. 1em is equal to the current font size.</p>
+                    <li id="rem">rem</li>
+                    <p class="content">The rem unit is similar to em, but it is relative to the root element (html)
+                        rather than the parent element.</p>
+                    <li id="vw">vw</li>
+                    <p class="content">The vw unit represents a percentage of the viewport width. 1vw is equal to 1% of
+                        the viewport width.</p>
+                    <li id="vh">vh</li>
+                    <p class="content">The vh unit represents a percentage of the viewport height. 1vh is equal to 1% of
+                        the viewport height.</p>
+                    <li id="vmin">vmin</li>
+                    <p class="content">The vmin unit represents a percentage of the smaller dimension of the viewport.
+                        1vmin is equal to 1% of the smaller dimension.</p>
+                    <li id="vmax">vmax</li>
+                    <p class="content">The vmax unit represents a percentage of the larger dimension of the viewport.
+                        1vmax is equal to 1% of the larger dimension.</p>
+                </ol>
+            </section>
+            <section class="main-section" id="The_CSS_Box_Model">
+                <header>The CSS Box Model</header>
+                <ol>
+                    <li id="content_area">Content Area</li>
+                    <p class="content">The content area is the innermost part of the box model where the actual content
+                        of the element is displayed.</p>
+                    <li id="width">Width</li>
+                    <p class="content">The width property sets the width of the content area of an element.</p>
+                    <li id="height">Height</li>
+                    <p class="content">The height property sets the height of the content area of an element.</p>
+                    <li id="padding">Padding</li>
+                    <p class="content">The padding property sets the space between the content and the border of an
+                        element.</p>
+                    <li id="border">Border</li>
+                    <p class="content">The border property sets the border around the padding and content of an element.
+                    </p>
+                    <li id="border_radius">Border Radius</li>
+                    <p class="content">The border_radius property sets the radius of the corners of an element's border.
+                    </p>
+                    <li id="margin">Margin</li>
+                    <p class="content">The margin property sets the space around an element's border.</p>
+                    <li id="box_sizing">box_sizing</li>
+                    <p class="content">The box_sizing property determines how the width and height of an element are
+                        calculated.</p>
+                </ol>
+            </section>
+            <section class="main-section" id="Display_Property">
+                <header>Display Property</header>
+                <ol>
+                    <li id="block">Block</li>
+                    <li id="inline">Inline</li>
+                    <li id="inline_block">Inline_block</li>
+                    <li id="none">None</li>
+                    <li id="contents">Contents</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Positioning">
+                <header>Positioning</header>
+                <ol>
+                    <li id="static">Static</li>
+                    <li id="relative">Relative</li>
+                    <li id="absolute">Absolute</li>
+                    <li id="fixed">Fixed</li>
+                    <li id="sticky">Sticky</li>
+                    <li id="z_index">Z_Index</li>
+                    <li id="stacking_context">Stacking Context</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Flexbox">
+                <header>Flexbox</header>
+                <ol>
+                    <li id="flex_container">Flex Container</li>
+                    <li id="flex_items">Flex Items</li>
+                    <li id="main_axis">Main Axis</li>
+                    <li id="cross_axis">Cross Axis</li>
+                    <li id="justify_content">justify_content</li>
+                    <li id="align_items">align_items</li>
+                    <li id="align_content">align_content</li>
+                    <li id="gap">gap</li>
+                    <li id="flex_grow">flex_grow</li>
+                    <li id="flex_shrink">flex_shrink</li>
+                    <li id="flex_basis">flex_basis</li>
+                    <li id="order">order</li>
+                    <li id="align_self">align_self</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Grid">
+                <header>CSS Grid</header>
+                <ol>
+                    <li id="grid_basics">Grid Basics</li>
+                    <li id="grid_container">Grid Container</li>
+                    <li id="grid_items">Grid Items</li>
+                    <li id="rows___columns">Rows &amp; Columns</li>
+                    <li id="grid_template_areas">Grid Template Areas</li>
+                    <li id="fr_unit">fr Unit</li>
+                    <li id="gap">Gap</li>
+                    <li id="auto_fit">Auto Fit</li>
+                    <li id="auto_fill">Auto Fill</li>
+                    <li id="responsive_grids">Responsive Grids</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Overflow">
+                <header>Overflow</header>
+                <ol>
+                    <li id="visible">visible</li>
+                    <li id="hidden">hidden</li>
+                    <li id="scroll">scroll</li>
+                    <li id="auto">auto</li>
+                    <li id="overflow_x">overflow_x</li>
+                    <li id="overflow_y">overflow_y</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Lists_&amp;_Tables">
+                <header>Lists &amp; Tables</header>
+                <ol>
+                    <li id="list_style_type">list_style_type</li>
+                    <li id="list_style_position">list_style_position</li>
+                    <li id="list_style_image">list_style_image</li>
+                    <li id="border_collapse">border_collapse</li>
+                    <li id="table_layout">table_layout</li>
+                    <li id="caption_side">caption_side</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Forms_Styling">
+                <header>Forms Styling</header>
+                <ol>
+                    <li id="inputs">Inputs</li>
+                    <li id="textareas">Textareas</li>
+                    <li id="select_menus">Select Menus</li>
+                    <li id="checkboxes">Checkboxes</li>
+                    <li id="radio_buttons">Radio Buttons</li>
+                    <li id="placeholder_styling">Placeholder Styling</li>
+                    <li id="focus_states">Focus States</li>
+                    <li id="disabled_states">Disabled States</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Responsive_Design">
+                <header>Responsive Design</header>
+                <ol>
+                    <li id="mobile_first">Mobile First</li>
+                    <li id="media_queries">Media Queries</li>
+                    <li id="breakpoints">Breakpoints</li>
+                    <li id="responsive_typography">Responsive Typography</li>
+                    <li id="responsive_images">Responsive Images</li>
+                    <li id="responsive_layouts">Responsive Layouts</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Transforms">
+                <header>CSS Transforms</header>
+                <ol>
+                    <li id="translate">translate()</li>
+                    <li id="rotate">rotate()</li>
+                    <li id="scale">scale()</li>
+                    <li id="skew">skew()</li>
+                    <li id="transform_origin">transform_origin</li>
+                    <li id="multiple_transforms">Multiple Transforms</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Transitions">
+                <header>CSS Transitions</header>
+                <ol>
+                    <li id="transition_property">transition_property</li>
+                    <li id="transition_duration">transition_duration</li>
+                    <li id="transition_delay">transition_delay</li>
+                    <li id="transition_timing_function">transition_timing_function</li>
+                    <li id="hover_animations">Hover Animations</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Animations">
+                <header>CSS Animations</header>
+                <ol>
+                    <li id="keyframes">@keyframes</li>
+                    <li id="animation_name">animation_name</li>
+                    <li id="animation_duration">animation_duration</li>
+                    <li id="animation_delay">animation_delay</li>
+                    <li id="animation_iteration_count">animation_iteration_count</li>
+                    <li id="animation_direction">animation_direction</li>
+                    <li id="animation_fill_mode">animation_fill_mode</li>
+                    <li id="animation_play_state">animation_play_state</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Variables">
+                <header>CSS Variables</header>
+                <ol>
+                    <li id="creating_variables">Creating Variables</li>
+                    <li id="using_variables">Using Variables</li>
+                    <li id="fallback_values">Fallback Values</li>
+                    <li id="global_variables">Global Variables</li>
+                    <li id="theme_switching">Theme Switching</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Advanced_Selectors">
+                <header>Advanced Selectors</header>
+                <ol>
+                    <li id="is">:is()</li>
+                    <li id="where">:where()</li>
+                    <li id="has">:has()</li>
+                    <li id="not">:not()</li>
+                    <li id="complex_selector_patterns">Complex Selector Patterns</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Functions">
+                <header>CSS Functions</header>
+                <ol>
+                    <li id="calc">calc()</li>
+                    <li id="min">min()</li>
+                    <li id="max">max()</li>
+                    <li id="clamp">clamp()</li>
+                    <li id="var">var()</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Shadows">
+                <header>Shadows</header>
+                <ol>
+                    <li id="box_shadow">Box Shadow</li>
+                    <li id="multiple_shadows">Multiple Shadows</li>
+                    <li id="text_shadow">Text Shadow</li>
+                    <li id="neumorphism_basics">Neumorphism Basics</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Modern_CSS_Layout_Techniques">
+                <header>Modern CSS Layout Techniques</header>
+                <ol>
+                    <li id="holy_grail_layout">Holy Grail Layout</li>
+                    <li id="sidebar_layout">Sidebar Layout</li>
+                    <li id="card_layout">Card Layout</li>
+                    <li id="masonry_concepts">Masonry Concepts</li>
+                    <li id="dashboard_layout">Dashboard Layout</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Architecture">
+                <header>CSS Architecture</header>
+                <ol>
+                    <li id="naming_conventions">Naming Conventions</li>
+                    <li id="bem">BEM</li>
+                    <li id="organizing_css_files">Organizing CSS Files</li>
+                    <li id="reusable_components">Reusable Components</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Accessibility_in_CSS">
+                <header>Accessibility in CSS</header>
+                <ol>
+                    <li id="contrast_ratios">Contrast Ratios</li>
+                    <li id="focus_indicators">Focus Indicators</li>
+                    <li id="reduced_motion">Reduced Motion</li>
+                    <li id="readability">Readability</li>
+                    <li id="accessible_forms">Accessible Forms</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Performance">
+                <header>CSS Performance</header>
+                <ol>
+                    <li id="efficient_Selectors">Efficient Selectors</li>
+                    <li id="avoiding_reflows">Avoiding Reflows</li>
+                    <li id="optimizing_animations">Optimizing Animations</li>
+                    <li id="best_practices">Best Practices</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Debugging">
+                <header>CSS Debugging</header>
+                <ol>
+                    <li id="browser_devtools">Browser DevTools</li>
+                    <li id="inspect_element">Inspect Element</li>
+                    <li id="computed_styles">Computed Styles</li>
+                    <li id="box_model_debugging">Box Model Debugging</li>
+                    <li id="flexbox_debugging">Flexbox Debugging</li>
+                    <li id="grid_debugging">Grid Debugging</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Modern_CSS_Features">
+                <header>Modern CSS Features</header>
+                <ol>
+                    <li id="container_queries">Container Queries</li>
+                    <li id="logical_properties">Logical Properties</li>
+                    <li id="aspect_ratio">aspect_ratio</li>
+                    <li id="accent_color">accent_color</li>
+                    <li id="scroll_behavior">scroll_behavior</li>
+                    <li id="scroll_snap">scroll_snap</li>
+                    <li id="backdrop_filter">backdrop_filter</li>
+                    <li id="object_fit">object_fit</li>
+                    <li id="object_position">object_position</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Best_Practices">
+                <header>CSS Best Practices</header>
+                <ol>
+                    <li id="clean_code">Clean Code</li>
+                    <li id="maintainability">Maintainability</li>
+                    <li id="reusability">Reusability</li>
+                    <li id="scalability">Scalability</li>
+                    <li id="common_mistakes">Common Mistakes</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Real_World_Projects">
+                <header>Real World Projects</header>
+                <ol>
+                    <li id="landing_page">Landing Page</li>
+                    <li id="documentation_website">Documentation Website</li>
+                    <li id="portfolio_website">Portfolio Website</li>
+                    <li id="dashboard_ui">Dashboard UI</li>
+                    <li id="blog_layout">Blog Layout</li>
+                    <li id="product_card">Product Card</li>
+                    <li id="navigation_bar">Navigation Bar</li>
+                    <li id="pricing_section">Pricing Section</li>
+                    <li id="hero_section">Hero Section</li>
+                    <li id="responsive_footer">Responsive Footer</li>
+                </ol>
+            </section>
+            <section class="main-section" id="CSS_Cheat_Sheet">
+                <header>CSS Cheat Sheet</header>
+                <ol>
+                    <li id="Selectors_cheat_sheet">Selectors Cheat Sheet</li>
+                    <li id="flexbox_cheat_sheet">Flexbox Cheat Sheet</li>
+                    <li id="grid_cheat_sheet">Grid Cheat Sheet</li>
+                    <li id="position_cheat_sheet">Position Cheat Sheet</li>
+                    <li id="units_cheat_sheet">Units Cheat Sheet</li>
+                    <li id="colors_cheat_sheet">Colors Cheat Sheet</li>
+                    <li id="animation_cheat_sheet">Animation Cheat Sheet</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
